@@ -11,13 +11,9 @@ class AuthController extends Controller{
 		return view('login');
 	}
 
-		function showAdminLogin(){
-		return view('admin/login');
-	}
-
 	function logout(){
 		Auth::logout();
-		return redirect('admin/beranda');
+		return redirect('Beranda');
 	}
 	
 	function loginProsess(){
