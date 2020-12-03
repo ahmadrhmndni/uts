@@ -13,7 +13,7 @@ class AuthController extends Controller{
 
 	function logout(){
 		Auth::logout();
-		return redirect('Beranda');
+		return redirect('beranda');
 	}
 	
 	function loginProsess(){
@@ -26,7 +26,7 @@ class AuthController extends Controller{
 
 	function logout(){
 		Auth::logout();
-		return redirect('');
-		//return redirect('/admin/login');
+		return redirect('beranda');
+		
 	}
 }
